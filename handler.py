@@ -2,10 +2,10 @@ import pymysql
 from datetime import datetime
 from pytz import timezone
 
-endpoint = 'telemetry-test.cixjrvihozds.us-west-2.rds.amazonaws.com'
-username = 'admin'
-password = 'adminsql'
-database_name = 'h_Telemetry_Reborn'
+endpoint = 'endpint'
+username = 'user'
+password = 'pass'
+database_name = 'name'
 
 connection = pymysql.connect(host=endpoint, user=username,
                              password=password, db=database_name)
@@ -32,7 +32,7 @@ def lambda_handler(event, context):
  
     
     connection.commit()
-# Fucnion
+# Function
     
 
 
